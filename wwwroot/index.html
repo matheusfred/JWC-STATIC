@@ -1,23 +1,188 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jackson Pro Welding</title>
+
+    <!-- Primary SEO -->
+    <title>Jackson Pro Welding | Mobile Welding & Metal Fabrication in Melbourne, FL</title>
+    <meta name="description" content="Jackson Pro Welding offers professional mobile welding, steel fabrication, aluminum and stainless steel welding, and metal repairs in Melbourne, FL and Brevard, Indian River & Volusia Counties. Licensed & insured. Free estimates." />
+    <meta name="keywords" content="welding, mobile welding, metal fabrication, steel fabrication, aluminum welding, stainless steel welding, welding repairs, Melbourne FL, Brevard County, Indian River County, Volusia County" />
+    <meta name="author" content="Jackson Pro Welding" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://jacksonprowelding.com/" />
+
+    <!-- Open Graph (Facebook / social) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jacksonprowelding.com/" />
+    <meta property="og:title" content="Jackson Pro Welding | Mobile Welding & Metal Fabrication in Melbourne, FL" />
+    <meta property="og:description" content="Professional mobile welding, steel fabrication, aluminum and stainless steel welding and repairs. Serving Brevard, Indian River & Volusia Counties, FL. Licensed & insured. Free estimates." />
+    <meta property="og:image" content="https://jacksonprowelding.com/img/banner.jpg" />
+    <meta property="og:site_name" content="Jackson Pro Welding" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jackson Pro Welding | Mobile Welding & Metal Fabrication in Melbourne, FL" />
+    <meta name="twitter:description" content="Professional mobile welding, steel fabrication, aluminum and stainless steel welding and repairs in Melbourne, FL. Licensed & insured. Free estimates." />
+    <meta name="twitter:image" content="https://jacksonprowelding.com/img/banner.jpg" />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#090909" />
+
     <base href="/" />
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/jpeg" href="img/logo-sm.jpg" />
+    <link rel="apple-touch-icon" href="icon-192.png" />
+
+    <!-- Structured data: LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://jacksonprowelding.com/#business",
+      "name": "Jackson Pro Welding",
+      "description": "Professional mobile welding, steel fabrication, aluminum and stainless steel welding, and metal repairs serving Melbourne, FL and surrounding counties.",
+      "url": "https://jacksonprowelding.com/",
+      "logo": "https://jacksonprowelding.com/img/logo-sm.jpg",
+      "image": "https://jacksonprowelding.com/img/banner.jpg",
+      "email": "contact@jacksonprowelding.com",
+      "telephone": ["+17726349605", "+13213474035"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4155 Dow Rd - Unit 28",
+        "addressLocality": "Melbourne",
+        "addressRegion": "FL",
+        "postalCode": "32934",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Brevard County, FL" },
+        { "@type": "AdministrativeArea", "name": "Indian River County, FL" },
+        { "@type": "AdministrativeArea", "name": "Volusia County, FL" }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "07:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61574418192454",
+        "https://www.instagram.com/jacksonprowelding/"
+      ],
+      "priceRange": "$$",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Welding Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobile Welding" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steel Fabrication" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aluminum Welding" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stainless Steel Welding" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Metal Repairs" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Metal Projects" } }
+        ]
+      }
+    }
+    </script>
+    <style>
+        /* Critical styles inlined so the loading screen and error banner
+           render correctly before external CSS finishes loading. */
+        #blazor-error-ui {
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2000;
+            padding: 0.85rem 1.25rem;
+            background: #b32121;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.4);
+        }
+
+            #blazor-error-ui .dismiss {
+                position: absolute;
+                right: 0.75rem;
+                top: 0.5rem;
+                cursor: pointer;
+            }
+
+        .app-loading {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.25rem;
+            font-family: Arial, Helvetica, sans-serif;
+            background: radial-gradient(circle at top, rgba(255, 106, 0, 0.14), transparent 28%), linear-gradient(180deg, #121212 0%, #090909 100%);
+        }
+
+        .app-loading-brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.2rem;
+        }
+
+        .app-loading-title {
+            font-size: 1.7rem;
+            font-weight: 900;
+            letter-spacing: 0.12em;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .app-loading-subtitle {
+            font-size: 0.8rem;
+            letter-spacing: 0.3em;
+            color: #ff6a00;
+            text-transform: uppercase;
+        }
+
+        .app-loading-spinner {
+            width: 2.75rem;
+            height: 2.75rem;
+            border: 3px solid rgba(255, 106, 0, 0.2);
+            border-top-color: #ff6a00;
+            border-radius: 50%;
+            animation: app-loading-spin 0.9s linear infinite;
+        }
+
+        .app-loading-text {
+            color: #b8b8b8;
+            font-size: 0.85rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+        }
+
+        @keyframes app-loading-spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div id="app">
-        <svg class="loading-progress">
-            <circle r="40%" cx="50%" cy="50%" />
-            <circle r="40%" cx="50%" cy="50%" />
-        </svg>
-        <div class="loading-progress-text"></div>
+        <div class="app-loading">
+            <div class="app-loading-brand">
+                <span class="app-loading-title">JACKSON</span>
+                <span class="app-loading-subtitle">PRO WELDING</span>
+            </div>
+            <div class="app-loading-spinner"></div>
+            <span class="app-loading-text">Loading…</span>
+        </div>
     </div>
 
     <div id="blazor-error-ui">
