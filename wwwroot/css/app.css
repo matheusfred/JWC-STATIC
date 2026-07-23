@@ -766,12 +766,14 @@ a.contact-value:hover {
 @media (max-width: 991px) {
     .site-header .navbar-brand {
         flex: 0 0 50%;
-        max-width: 50%;
         margin-right: 0;
     }
 
+    .site-header .brand-mark {
+        border-radius: 0%;
+    }
+
     .site-header .navbar-toggler {
-        flex: 0 0 50%;
         max-width: 50%;
         display: flex;
         align-items: center;
@@ -833,7 +835,7 @@ a.contact-value:hover {
     }
 
     .hero-copy h1 {
-        font-size: clamp(1.9rem, 8.5vw, 2.6rem);
+        font-size: clamp(1.8rem, 8.5vw, 2.6rem);
     }
 
     .hero-copy p {
